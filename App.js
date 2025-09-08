@@ -2,7 +2,10 @@ const express = require('express')
 const cors = require('cors')
 require('./db/Connection')
 const app =  express()
-app.use(cors());
+app.use(cors({
+    origin:['http://localhost:3000/'],
+    credentials:true
+}));
 const PORT = 5000
 
 app.use(express.json());
