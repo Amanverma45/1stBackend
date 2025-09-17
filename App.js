@@ -3,7 +3,7 @@ const cors = require('cors')
 require('./db/Connection')
 const app =  express()
 app.use(cors({
-    origin:['http://localhost:3000'],
+    origin:['https://frontendemployee.netlify.app/'],
     credentials:true
 }));
 const PORT = 5000
